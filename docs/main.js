@@ -1,0 +1,2 @@
+(()=>{"use strict";document.querySelector(".controls").addEventListener("click",(function(e){e.preventDefault();var t=document.querySelector(".container"),r=Array.from(document.querySelectorAll(".gallery-img")),n=(r[0].offsetWidth,r[0]);n.classList.add("slides"),setTimeout((function(){t.insertAdjacentElement("beforeend",n),n.classList.remove("slides")}),500)}))})();
+//# sourceMappingURL=main.js.map
