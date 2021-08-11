@@ -1,0 +1,115 @@
+.hero {
+  position: relative;
+  margin-top: 1.125rem;
+}
+
+.main-pic {
+  text-align: center;
+  margin-left: 5rem;
+}
+.price {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background: $backgroun-color;
+  color: $font-color;
+  font-size: 2rem;
+  padding: 0 3.5625rem 0 1.75rem;
+  border-radius: 0.75rem;
+  filter: drop-shadow(-0.5rem 0.866rem 0.9688rem rgba(0, 0, 0, 0.16));
+  p {
+    margin: 0.9375rem 0;
+  }
+  span {
+    display: inline-block;
+    font-size: 2.375rem;
+    color: $font-color3;
+    font-weight: bold;
+    padding: 0 3.75rem 0.9375rem 0;
+    border-bottom: 0.25rem solid $btn-color;
+    margin-bottom: 0.9375rem;
+  }
+}
+.social-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 23%;
+  left: 3%;
+  text-align: left;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.0625rem solid $font-color3;
+    border-radius: 50%;
+    // padding: 1rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    color: $font-color;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    transition: 0.1s ease-out;
+    span {
+      display: none;
+    }
+  }
+
+  svg {
+    height: 1.5625rem;
+  }
+  a:hover {
+    padding-left: 1.25rem;
+    justify-content: flex-start;
+    width: 14.0625rem;
+    border: none;
+    border-radius: 1.875rem;
+    white-space: nowrap;
+    background: $btn-color2;
+    color: $backgroun-color;
+    filter: drop-shadow(0.3206rem 0.8809rem 0.5313rem rgba(0, 0, 0, 0.18));
+    span {
+      margin-left: 1.25rem;
+      font-size: 1.625rem;
+      display: inline-block;
+      width: 6.25rem;
+      background: $btn-color2;
+    }
+  }
+}
+.more-btn {
+  position: absolute;
+  bottom: 0%;
+  left: 3%;
+  img {
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    background: $backgroun-color;
+    filter: drop-shadow(0rem 0.4375rem 0.7188rem rgba(0, 0, 0, 0.27));
+    margin-right: 1.25rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 1.625rem;
+    color: $btn-color2;
+  }
+}
+@media (max-width: 48rem) {
+  .hero {
+    .main-pic img,
+    .price,
+    .more-btn a span {
+      display: none;
+    }
+  }
+}
+@media (max-width: 26.5625rem) {
+  .more-btn {
+    display: none;
+  }
+}

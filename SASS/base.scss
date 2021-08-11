@@ -1,0 +1,118 @@
+$backgroun-color: #fff;
+$font-color: #000;
+$font-color2: #7d7d7d;
+$font-color3: #0d9206;
+$btn-color: #ff8800;
+$btn-color2: #789376;
+
+@import "./normalize.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/square721-bt");
+@import "./country.scss";
+@import "./hero.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+main {
+  //   animation: fadein 1s;
+  margin-top: 4.125rem;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  *zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  .hero {
+    width: 52%;
+    animation: zoom 1s;
+  }
+  @keyframes zoom {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .country {
+    width: 48%;
+    animation: fromRight 1s;
+  }
+  @keyframes fromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+@media (max-width: 90rem) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 64rem) {
+  html {
+    font-size: 68%;
+  }
+}
+@media (max-width: 48rem) {
+  html {
+    font-size: 60%;
+  }
+  main {
+    .hero {
+      width: 10%;
+    }
+    .country {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 33" width="26" height="33">
+	<title>Graficke-zadanie</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #789376;stroke-linecap:round;stroke-width: 3 } 
+	</style>
+	<g id="Graficke-zadanie">
+		<g id="Group 5">
+			<g id="Group 1">
+				<path id="Path 1" class="shp0" d="M13.01 2L13.01 28.02" />
+				<path id="Path 2" class="shp0" d="M21.72 19.31L13.01 28.02L4.3 19.31" />
+			</g>
+		</g>
+	</g>
+</svg>

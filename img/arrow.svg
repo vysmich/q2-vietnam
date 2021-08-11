@@ -1,0 +1,9 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 26" width="36" height="26">
+	<title>Path 2</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #0d9206;stroke-linecap:round;stroke-width: 3 } 
+	</style>
+	<path id="Path 1" class="shp0" d="M1.95 13L34.05 13" />
+	<path id="Path 2" class="shp0" d="M23.31 2.26L34.05 13L23.31 23.74" />
+</svg>
